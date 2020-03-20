@@ -40,6 +40,7 @@
       
       <div class="input fields">
       <h3>What campus are you in?</h3>
+        
         <fieldset>
           <p><legend>Select your campus</legend>
      <label>Campus</label>
@@ -48,13 +49,68 @@
       </option>
           <option value="west wing">West Wing</option>
           <option value="east wing">East Wing</option>
-      
+            </select>
       
           </p>
+            
           </fieldset>
-        </div>   
         
-<button action="submit">Submit</button>
+        </div>  
+      <hr>
+      
+      <div class="input fields">
+        <h3>1. On a scale from 1 to 5 how well do you think your teacher knows the subjects from this class?</h3>
+        <label for="Not Satisfactory">
+          <input id="Not Satisfactory" type="radio" name="subject mastery" value="not satisfactory" required>Not Satisfactory
+        </label>
+      <label for="Poor">
+          <input id="Poor" type="radio" name="subject mastery" value="poor">Poor
+        </label>
+        <label for="Acceptable">
+          <input id="Acceptable" type="radio" name="subject mastery" value="acceptable">Acceptable
+        </label>
+        <label for="Very Good">
+          <input id="Very Good" type="radio" name="subject mastery" value="very good">Very Good
+        </label>
+        <label for="Incredible knowledge">
+          <input id="Incredible knowledge" type="radio" name="subject mastery" value="incredible knowledge">Incredible knowledge
+        </label>
+      </div>  
+      
+      <div class="input fields">
+        <h3>2. How timely was your teacher to reply to your emails and questions?</h3>
+        <input id="Very slow or no response" type="radio" name="timeliness" value="very slow or no response" required>
+        <label for="Very slow or no response">Very slow or no response</label>
+        <input id="Occasionally quick" type="radio" name="timeliness" value="occasionally quick">
+        <label for="Occasionally quick">Occasionally quick</label>
+        <input id="Fairly quick (24 hours or less)" type="radio" name="timeliness" value="fairly quick (24 hours or less)">
+        <label for="Fairly quick (24 hours or less)">Fairly quick (24 hours or less)</label>
+        <input id="Very quick (12 hours or less)" type="radio" name="timeliness" value="very quick (12 hours or less)">
+        <label for="Very quick (12 hours or less)">Very quick (12 hours or less)</label>
+        </div>
+
+        <div class="input fields">
+            <h3>3. On a scale of 1 to 5 how likely are you to recommend this teacher to other students, 1 being very unlikely and 5 very likely?</h3>
+            <input id="1" type="radio" name="referral probability" value="1" required>
+            <label for="1">1</label>
+            <input id="2" type="radio" name="referral probability" value="2">
+            <label for="2">2</label>
+            <input id="3" type="radio" name="referral probability" value="3">
+            <label for="3">3</label>
+            <input id="4" type="radio" name="referral probability" value="4">
+            <label for="4">4</label>
+            <input id="5" type="radio" name="referral probability" value="5">
+            <label for="5">5</label>
+            </div> 
+      
+      
+      
+      
+      
+      
+      
+        <button action="submit">Submit</button>
+  
 
     </form>
 
