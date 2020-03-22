@@ -13,29 +13,29 @@
     </div>
 
     
-    <header id="title"><h1>Teacher Feedback Form</h1></header>
+    <header><h1 id="title">Teacher Feedback Form</h1></header>
 
-    <div id="description"><p>In order to help us provide you with the best service possible and help us improve your learning experience, we would appreciate you filling out the following form.
+    <div><p id="description">In order to help us provide you with the best service possible and help us improve your learning experience, we would appreciate you filling out the following form.
         Your information is strictly confidential and won’t be shared with anyone without your additional consent.</p></div>
     
        
 
 <main>
-    <form>
+    <form id="survey-form">
       
       <div class="input fields">
-      <h3>Name</h3>
-      <input type="text" placeholder="Insert name here" required>
+        <label id="name-label"><h3>Name</h3></label>
+      <input id="name" type="text" placeholder="Insert name here" required>
       </div>
       
       <div class="input fields">
-      <h3>Email</h3>
-      <input type="email" placeholder="insert email here" required>
+        <label id="email-label"><h3>Email</h3></label>
+      <input id="email" type="email" placeholder="insert email here" required>
       </div>
       
       <div class="input fields">
-      <h3>Section</h3>
-      <input type="number" min="100" max="999" placeholder="Insert section number here" required>
+        <label  id="number-label"><h3>Section</h3></label>
+      <input id="number" type="number" min="100" max="999" placeholder="Insert section number here" required>
       </div>
       
       <div class="input fields">
@@ -44,7 +44,7 @@
         <fieldset>
           <p><legend>Select your campus</legend>
      <label>Campus</label>
-        <select id="campus">
+        <select id="dropdown">
           <option value="main" checked>Main
       </option>
           <option value="west wing">West Wing</option>
@@ -142,22 +142,22 @@
 </div>
       
       <div class="input fields">
-        <h3>5. Do you have any comments? Please provide any additional feedback in the field below.</h3>
-        <input tyoe="text" id="text-comment" placeholder="enter your comment here...">
+        <label for="text-comment"><h3>5. Do you have any comments? Please provide any additional feedback in the field below.</h3></label>
+        <textarea id="text-comment" placeholder="enter your comment here..."></textarea>
 
 
 
-      </div>
+      </div><br>
       
       
-        <button action="submit">Submit</button>
+        <button id="submit" action="submit">Submit</button>
   
 
     </form>
 
 
 
-</main>
+</main><br>
 
 
 
