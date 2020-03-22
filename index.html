@@ -9,75 +9,69 @@
 </head>
 
 <body>
+
     <div id="top-background-image">    
     </div>
 
-    
+  <main>
     <header><h1 id="title">Teacher Feedback Form</h1></header>
 
     <div><p id="description">In order to help us provide you with the best service possible and help us improve your learning experience, we would appreciate you filling out the following form.
         Your information is strictly confidential and won’t be shared with anyone without your additional consent.</p></div>
     
        
-
-<main>
     <form id="survey-form">
       
-      <div class="input fields">
+      <div class="input-fields">
         <label id="name-label"><h3>Name</h3></label>
       <input id="name" type="text" placeholder="Insert name here" required>
       </div>
       
-      <div class="input fields">
+      <div class="input-fields">
         <label id="email-label"><h3>Email</h3></label>
-      <input id="email" type="email" placeholder="insert email here" required>
+      <input id="email" type="email" placeholder="Insert email here" required>
       </div>
       
-      <div class="input fields">
+      <div class="input-fields">
         <label  id="number-label"><h3>Section</h3></label>
       <input id="number" type="number" min="100" max="999" placeholder="Insert section number here" required>
       </div>
       
-      <div class="input fields">
+      <div class="input-fields">
       <h3>What campus are you in?</h3>
         
-        <fieldset>
-          <p><legend>Select your campus</legend>
-     <label>Campus</label>
-        <select id="dropdown">
-          <option value="main" checked>Main
-      </option>
+          <p><legend>Select your campus</legend><br>
+          <label for="dropdoan">Campus</label>
+          <select id="dropdown">
+          <option value="main" checked>Main</option>
           <option value="west wing">West Wing</option>
           <option value="east wing">East Wing</option>
-            </select>
+          </select>
       
           </p>
-            
-          </fieldset>
         
         </div>  
       <hr>
       
-      <div class="input fields">
+      <div class="input-fields">
         <h3>1. On a scale from 1 to 5 how well do you think your teacher knows the subjects from this class?</h3>
-        <label for="Not Satisfactory">
-          <input id="Not Satisfactory" type="radio" name="subject mastery" value="not satisfactory" required>Not Satisfactory
-        </label>
-      <label for="Poor">
-          <input id="Poor" type="radio" name="subject mastery" value="poor">Poor
-        </label>
-        <label for="Acceptable">
-          <input id="Acceptable" type="radio" name="subject mastery" value="acceptable">Acceptable
-        </label>
-        <label for="Very Good">
-          <input id="Very Good" type="radio" name="subject mastery" value="very good">Very Good
-        </label>
-        <label for="Incredible knowledge">
-          <input id="Incredible knowledge" type="radio" name="subject mastery" value="incredible knowledge">Incredible knowledge
-        </label>
+        <input id="Not Satisfactory" type="radio" name="subject mastery" value="not satisfactory" required>
+        <label for="Not Satisfactory">Not Satisfactory</label><br>
+
+        <input id="Poor" type="radio" name="subject mastery" value="poor">
+        <label for="Poor">Poor</label><br>
+
+        <input id="Acceptable" type="radio" name="subject mastery" value="acceptable">
+        <label for="Acceptable">Acceptable</label><br>
+
+        <input id="Very Good" type="radio" name="subject mastery" value="very good">
+        <label for="Very Good">Very Good</label><br>
+        
+        <input id="Incredible knowledge" type="radio" name="subject mastery" value="incredible knowledge">
+        <label for="Incredible knowledge">Incredible knowledge</label><br>
       </div>  
       
-      <div class="input fields">
+      <div class="input-fields">
         <h3>2. How timely was your teacher to reply to your emails and questions?</h3>
         <input id="Very slow or no response" type="radio" name="timeliness" value="very slow or no response" required>
         <label for="Very slow or no response">Very slow or no response</label><br>
@@ -89,29 +83,30 @@
         <label for="Very quick (12 hours or less)">Very quick (12 hours or less)</label><br>
         </div>
 
-        <div class="input fields">
+        <div class="input-fields">
             <h3>3. On a scale of 1 to 5 how likely are you to recommend this teacher to other students, 1 being very unlikely and 5 very likely?</h3>
             <input id="1" type="radio" name="referral probability" value="1" required>
-            <label for="1">1</label>
+            <label for="1">1</label><br>
             <input id="2" type="radio" name="referral probability" value="2">
-            <label for="2">2</label>
+            <label for="2">2</label><br>
             <input id="3" type="radio" name="referral probability" value="3">
-            <label for="3">3</label>
+            <label for="3">3</label><br>
             <input id="4" type="radio" name="referral probability" value="4">
-            <label for="4">4</label>
+            <label for="4">4</label><br>
             <input id="5" type="radio" name="referral probability" value="5">
-            <label for="5">5</label>
+            <label for="5">5</label><br>
             </div> 
       
-        <div class="input fields">
+        <div class="input-fields">
 
         </div>
 
-        <div class="input fields">
+        <div class="input-fields">
       <h3>4. What would you suggest your teacher do to improve your learning experience?
     </h3>
     <legend>(Check all that apply)</legend><br>
-    <label for="checkbox-1"><input id="checkbox-1" type="checkbox" name="improve-learning-experience" value="checkbox 1"> Integrate more multimedia content in lessons</label><br>
+    <input id="checkbox-1" type="checkbox" name="improve-learning-experience" value="checkbox 1">
+    <label for="checkbox-1"> Integrate more multimedia content in lessons</label><br>
 
     <input id="checkbox-2" type="checkbox" name="improve-learning-experience" value="checkbox 2">
     <label for="checkbox-2">Integrate more group activities for active learning</label><br>
@@ -123,7 +118,7 @@
             <label for="checkbox-4">Allow students to eat inside the classroom</label><br>
 
                 <input id="checkbox-5" type="checkbox" name="improve-learning-experience" value="checkbox 5">
-                <label for="checkbox-1">Bring expert guests to the classroom</label><br>
+                <label for="checkbox-5">Bring expert guests to the classroom</label><br>
 
                     <input id="checkbox-6" type="checkbox" name="improve-learning-experience" value="checkbox 6">
                     <label for="checkbox-6">Allow students to bring their pets to the classroom</label><br>
@@ -141,7 +136,7 @@
                                     <label for="checkbox-10">Improve feedback quality</label><br>
 </div>
       
-      <div class="input fields">
+      <div class="input-fields">
         <label for="text-comment"><h3>5. Do you have any comments? Please provide any additional feedback in the field below.</h3></label>
         <textarea id="text-comment" placeholder="enter your comment here..."></textarea>
 
@@ -153,15 +148,12 @@
         <button id="submit" action="submit">Submit</button>
   
 
-    </form>
-
-
-
-</main><br>
-
+    </form><br>
 
 
 <a href="https://www.freevector.com/colorful-abstract-pattern-28516">FreeVector.com</a>
+
+</main>
 
 </body>
   

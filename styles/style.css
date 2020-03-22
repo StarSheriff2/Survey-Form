@@ -1,3 +1,8 @@
+:root {
+  --input-text-size: 18px;
+  --question-input: 20px;
+}
+
 #top-background-image {
   background: #9cb8e6; 
   background: url("https://i.ibb.co/F6bQfby/rsz-modernhanddrawnpattern-03.jpg");
@@ -8,12 +13,64 @@
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
+ margin: auto;
+ color: 
+}
+
+main {
+margin: 100px 250px;
+line-height: 30px;
+position: relative;
+    top: 50px;
+}
+
+.input-fields {
+  
 }
 
 h1 {
     Color: black;
+    font-size: 50px;
+    
+}
+
+h3 {
+    font-size: 30px;
 }
 
 p {
    font-family: 'Source Sans Pro', sans-serif;
+   font-size: 20px;
+   line-height: 30px;
+}
+
+hr {
+  margin: 50px 0;
+}
+
+#name {
+  font-size: var(--input-text-size);
+}
+
+#email {
+  font-size: var(--input-text-size);
+}
+
+#number {
+  font-size: var(--input-text-size);
+}
+
+#dropdown {
+  font-size: var(--input-text-size);
+}
+
+#text-comment {
+  font-size: var(--input-text-size);
+}
+
+label {
+  font-size: var(--question-input);
+  line-height: 60px;
+  padding: 0.5em;
+  
 }
