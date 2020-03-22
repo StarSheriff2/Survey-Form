@@ -30,12 +30,12 @@
       
       <div class="input fields">
       <h3>Email</h3>
-      <input type="text" placeholder="insert email here" required>
+      <input type="email" placeholder="insert email here" required>
       </div>
       
       <div class="input fields">
       <h3>Section</h3>
-      <input action="text" placeholder="Insert section number here" required>
+      <input type="number" min="100" max="999" placeholder="Insert section number here" required>
       </div>
       
       <div class="input fields">
@@ -111,38 +111,43 @@
       <h3>4. What would you suggest your teacher do to improve your learning experience?
     </h3>
     <legend>(Check all that apply)</legend><br>
-    <input id="checkbox-1" type="checkbox" name="improve-learning-experience" value="checkbox 1" required>
-    <label for="checkbox-1">Integrate more multimedia content in lessons</label><br>
+    <label for="checkbox-1"><input id="checkbox-1" type="checkbox" name="improve-learning-experience" value="checkbox 1"> Integrate more multimedia content in lessons</label><br>
 
-    <input id="checkbox-2" type="checkbox" name="improve-learning-experience" value="checkbox 2" required>
+    <input id="checkbox-2" type="checkbox" name="improve-learning-experience" value="checkbox 2">
     <label for="checkbox-2">Integrate more group activities for active learning</label><br>
 
-        <input id="checkbox-3" type="checkbox" name="improve-learning-experience" value="checkbox 3" required>
+        <input id="checkbox-3" type="checkbox" name="improve-learning-experience" value="checkbox 3">
         <label for="checkbox-3">Make lessons more engaging</label><br>
 
-            <input id="checkbox-4" type="checkbox" name="improve-learning-experience" value="checkbox 4" required>
+            <input id="checkbox-4" type="checkbox" name="improve-learning-experience" value="checkbox 4">
             <label for="checkbox-4">Allow students to eat inside the classroom</label><br>
 
-                <input id="checkbox-5" type="checkbox" name="improve-learning-experience" value="checkbox 5" required>
+                <input id="checkbox-5" type="checkbox" name="improve-learning-experience" value="checkbox 5">
                 <label for="checkbox-1">Bring expert guests to the classroom</label><br>
 
-                    <input id="checkbox-6" type="checkbox" name="improve-learning-experience" value="checkbox 6" required>
+                    <input id="checkbox-6" type="checkbox" name="improve-learning-experience" value="checkbox 6">
                     <label for="checkbox-6">Allow students to bring their pets to the classroom</label><br>
 
-                        <input id="checkbox-7" type="checkbox" name="improve-learning-experience" value="checkbox 7" required>
+                        <input id="checkbox-7" type="checkbox" name="improve-learning-experience" value="checkbox 7">
                         <label for="checkbox-7">Use social media to engage with students</label><br>
 
-                            <input id="checkbox-8" type="checkbox" name="improve-learning-experience" value="checkbox 8" required>
+                            <input id="checkbox-8" type="checkbox" name="improve-learning-experience" value="checkbox 8">
                             <label for="checkbox-8">Use more digital tools to interact with students</label><br>
 
-                                <input id="checkbox-9" type="checkbox" name="improve-learning-experience" value="checkbox 9" required>
+                                <input id="checkbox-9" type="checkbox" name="improve-learning-experience" value="checkbox 9">
                                 <label for="checkbox-9">Include more real life examples in lessons</label><br>
 
-                                    <input id="checkbox-10" type="checkbox" name="improve-learning-experience" value="checkbox 10" required>
+                                    <input id="checkbox-10" type="checkbox" name="improve-learning-experience" value="checkbox 10">
                                     <label for="checkbox-10">Improve feedback quality</label><br>
 </div>
       
-      
+      <div class="input fields">
+        <h3>5. Do you have any comments? Please provide any additional feedback in the field below.</h3>
+        <input tyoe="text" id="text-comment" placeholder="enter your comment here...">
+
+
+
+      </div>
       
       
         <button action="submit">Submit</button>
