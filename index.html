@@ -21,27 +21,22 @@
     
        
     <form id="survey-form">
+      <section id="section-1">
+
+      <div class="input-fields"><h3>Name</h3>
+      <input id="name" type="text" placeholder="Insert name here" required></div>
       
-      <div class="input-fields">
-        <label id="name-label"><h3>Name</h3></label>
-      <input id="name" type="text" placeholder="Insert name here" required>
-      </div>
+      <div class="input-fields"><h3>Email</h3>
+      <input id="email" type="email" placeholder="Insert email here" required></div>
       
-      <div class="input-fields">
-        <label id="email-label"><h3>Email</h3></label>
-      <input id="email" type="email" placeholder="Insert email here" required>
-      </div>
-      
-      <div class="input-fields">
-        <label  id="number-label"><h3>Section</h3></label>
-      <input id="number" type="number" min="100" max="999" placeholder="Insert section number here" required>
-      </div>
+      <div class="input-fields"><h3>Section</h3>
+      <input id="number" type="number" min="100" max="999" placeholder="Insert section number here" required></div>
       
       <div class="input-fields">
       <h3>What campus are you in?</h3>
         
           <p><legend>Select your campus</legend><br>
-          <label for="dropdoan">Campus</label>
+          <label id="campus-label" for="dropdoan">Campus:</label>
           <select id="dropdown">
           <option value="main" checked>Main</option>
           <option value="west wing">West Wing</option>
@@ -52,7 +47,9 @@
         
         </div>  
       <hr>
-      
+    </section>
+
+    <section id="section-2">
       <div class="input-fields">
         <h3>1. On a scale from 1 to 5 how well do you think your teacher knows the subjects from this class?</h3>
         <input id="Not Satisfactory" type="radio" name="subject mastery" value="not satisfactory" required>
@@ -139,15 +136,12 @@
       <div class="input-fields">
         <label for="text-comment"><h3>5. Do you have any comments? Please provide any additional feedback in the field below.</h3></label>
         <textarea id="text-comment" placeholder="enter your comment here..."></textarea>
-
-
-
       </div><br>
       
-      
+    </section>
+
         <button id="submit" action="submit">Submit</button>
   
-
     </form><br>
 
 

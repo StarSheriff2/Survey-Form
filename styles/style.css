@@ -1,6 +1,7 @@
 :root {
   --input-text-size: 18px;
   --question-input: 20px;
+  --section-1-labels-position-value: 0;
 }
 
 #top-background-image {
@@ -14,7 +15,6 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
  margin: auto;
- color: 
 }
 
 main {
@@ -22,10 +22,6 @@ margin: 100px 250px;
 line-height: 30px;
 position: relative;
     top: 50px;
-}
-
-.input-fields {
-  
 }
 
 h1 {
@@ -62,15 +58,23 @@ hr {
 
 #dropdown {
   font-size: var(--input-text-size);
+  position: relative;
+  left: 10px;
 }
 
 #text-comment {
   font-size: var(--input-text-size);
 }
 
+#campus-label {
+  position: relative;
+  left: 0;
+}
+
 label {
   font-size: var(--question-input);
   line-height: 60px;
-  padding: 0.5em;
-  
+  position: relative;
+  left: 0.5em;
 }
+
