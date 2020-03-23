@@ -72,6 +72,13 @@ hr {
   margin: 50px 0;
 }
 
+#name-label, #email-label, #number-label {
+  font-size: var(--question-input);
+  line-height: 30px;
+  position: relative;
+  left: 0;
+}
+
 #name {
   font-size: var(--input-text-size);
   width: 50%;
