@@ -14,14 +14,30 @@
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
- margin: auto;
+ margin: 0;
 }
 
 main {
-margin: 100px 250px;
+  color: #2C4F87;
+margin: 100px auto;
+padding: 0 30px;
+width: 830px;
 line-height: 30px;
 position: relative;
 top: 50px;
+}
+
+/* Responsive Media Container */
+
+@media (max-width: 850px) {
+ main {
+    width: 600px;
+    height: 100px;
+  }
+
+  h1, h3, #description {
+    width: 85vw;
+  }
 }
 
 #section-1 {
@@ -35,14 +51,15 @@ top: 50px;
 }
 
 h1 {
-    Color: black;
     font-size: 50px;
+    line-height: 60px;
 }
 
 h3 {
     font-size: 30px;
     display: block;
     margin: 60px 0 40px 0;
+    line-height: 50px;
 }
 
 p {
@@ -63,7 +80,7 @@ hr {
   border-style: solid;
   border-radius: 5px;
   padding: 0 0.5em;
-  box-shadow: inset 0 0 5px 0 black;
+  box-shadow: inset 0 0 5px 0 #2C4F87;
 }
 
 #email {
@@ -74,7 +91,7 @@ hr {
   border-style: solid;
   border-radius: 5px;
   padding: 0 0.5em;
-  box-shadow: inset 0 0 5px 0 black;
+  box-shadow: inset 0 0 5px 0 #2C4F87;
 }
 
 #number {
@@ -85,7 +102,7 @@ hr {
   border-style: solid;
   border-radius: 5px;
   padding: 0 0.5em;
-  box-shadow: inset 0 0 5px 0 black;
+  box-shadow: inset 0 0 5px 0 #2C4F87;
 }
 
 #dropdown {
@@ -97,7 +114,15 @@ hr {
   border-width: 0; 
   border-style: solid;
   border-radius: 5px;
-  box-shadow: inset 0 0 5px 0 black;
+  box-shadow: inset 0 0 5px 0 #2C4F87;
+}
+
+input[type=checkbox], input[type=radio] {
+  position: relative;
+  top: 6px;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
 }
 
 #text-comment {
@@ -117,9 +142,13 @@ label {
 }
 
 #text-comment {
-  width: 100%;
+  width: 65vw;
   height: 100px;
-  padding: 10px;
+  border-width: 0; 
+  border-style: solid;
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: inset 0 0 5px 0 #2C4F87;
 }
 
 #submit {
@@ -128,6 +157,13 @@ label {
   top: 50px;
   height: 50px;
   width: 200px;
+  border-width: 0; 
+  border-style: solid;
+  border-radius: 5px;
+  padding: 0 0.5em;
+  background: #614100;
+  color: #e0ecff;
+  box-shadow: 0 0 5px 0 #2C4F87;
 }
 
 #image-credit {
